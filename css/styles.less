@@ -20,28 +20,30 @@ section#hero {
 			justify-content: center;
 			align-items: center;
  
-			span {
+			span:nth-of-type(1) {
 				display: block;
 				height: 1px;
 				width: 28px;
 				background: #222;
 				position: relative;
 
-				&:nth-of-type(1) {
-					&:before,
-					&:after {
-						content: '';
-						display: block;
-						height: 1px;
-						width: 28px;
-						background: #222;
-						position: absolute;
-					}
-
-					&:before {top: -9px;}
-					&:after {top: 9px;}
+				&:before,
+				&:after {
+					content: '';
+					display: block;
+					height: 1px;
+					width: 28px;
+					background: #222;
+					position: absolute;
 				}
-				&:nth-of-type(2) {}
+				&:before {top: -9px;}
+				&:after {top: 9px;}
+			}
+			span:nth-of-type(2) {
+				width: 1px;
+				height: 18px;
+				background: #222;
+				align-self: left;
 			}
 		}
 	}
