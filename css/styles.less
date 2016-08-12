@@ -18,6 +18,7 @@ section#hero {
 			display: inline-flex;
 			flex-direction: column;
 			justify-content: center;
+			align-items: center;
  
 			span {
 				height: 1px;
@@ -30,11 +31,12 @@ section#hero {
 						content: '';
 						height: 1px;
 						width: 28px;
+						background: #222;
 						position: relative;
 					}
 
-					&:before {top: -8px;}
-					&:after {top: 8px;}
+					&:before {top: -16px;}
+					&:after {top: 16px;}
 				}
 				&:nth-of-type(2) {}
 			}
