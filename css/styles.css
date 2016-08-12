@@ -8,11 +8,20 @@ section#hero header {
 section#hero header #logo {
   height: 55px;
   width: 55px;
-  border: 3px solid #222;
+  border: 1px solid #222;
   border-radius: 50%;
   overflow: hidden;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+section#hero header #logo span {
+  height: 2px;
+  width: 32px;
+  background: #222;
+}
+section#hero header #logo span:nth-of-type(1):before,
+section#hero header #logo span:nth-of-type(1):after {
+  content: '';
 }
