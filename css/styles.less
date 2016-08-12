@@ -18,11 +18,12 @@ section#hero {
 			display: inline-block;
 			position: relative;
 			box-shadow: 0 0 0 4px #ebebeb;
+			transform: rotate(-27deg);
  
 			span:nth-of-type(1) {
 				display: block;
 				height: 1px;
-				width: 28px;
+				width: 14px;
 				background: #222;
 				position: absolute;
 				top: 50%;
@@ -35,17 +36,23 @@ section#hero {
 					content: '';
 					display: block;
 					height: 1px;
-					width: 28px;
+					width: 18px;
 					background: #222;
 					position: absolute;
 				}
-				&:before {top: -9px;}
-				&:after {top: 9px;}
+				&:before {top: -10px;}
+				&:after {top: 10px;}
 			}
 			span:nth-of-type(2) {
 				width: 1px;
-				height: 18px;
+				height: 22px;
 				background: #222;
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -1px 0 0 0;
+				transform: translate(-10px, -50%);
 			}
 		}
 	}

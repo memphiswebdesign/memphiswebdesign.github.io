@@ -14,11 +14,14 @@ section#hero header #logo {
   display: inline-block;
   position: relative;
   box-shadow: 0 0 0 4px #ebebeb;
+  -webkit-transform: rotate(-27deg);
+      -ms-transform: rotate(-27deg);
+          transform: rotate(-27deg);
 }
 section#hero header #logo span:nth-of-type(1) {
   display: block;
   height: 1px;
-  width: 28px;
+  width: 14px;
   background: #222;
   position: absolute;
   top: 50%;
@@ -33,18 +36,26 @@ section#hero header #logo span:nth-of-type(1):after {
   content: '';
   display: block;
   height: 1px;
-  width: 28px;
+  width: 18px;
   background: #222;
   position: absolute;
 }
 section#hero header #logo span:nth-of-type(1):before {
-  top: -9px;
+  top: -10px;
 }
 section#hero header #logo span:nth-of-type(1):after {
-  top: 9px;
+  top: 10px;
 }
 section#hero header #logo span:nth-of-type(2) {
   width: 1px;
-  height: 18px;
+  height: 22px;
   background: #222;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1px 0 0 0;
+  -webkit-transform: translate(-10px, -50%);
+      -ms-transform: translate(-10px, -50%);
+          transform: translate(-10px, -50%);
 }
